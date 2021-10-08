@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../cover.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,.5);
+    padding: 2rem 0;
+    color: #ebebeb;
+    text-align: center;
+}
+
+.text {
+    font-size: 2.5rem;
+}
+
+.time-container {
+    display: flex;
+}
+
+.time-container .shared {
+    text-align: center;
+    font-weight: bold;
+}
+
+.time-container .shared p {
+    font-size: 6rem;
+    margin: 0 2rem;
+}
+
+.time-container .shared span {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .text {
+        font-size: 2rem;
+    }
+
+    .time-container .shared p {
+        font-size: 4rem;
+        margin: 0 1.5rem;
+    }
+    .time-container .shared span {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .time-container .shared p {
+        font-size: 2.8rem;
+        margin: 0 1.4rem;
+    }
+    .time-container .shared span {
+        font-size: 1rem;
+    }
+}
